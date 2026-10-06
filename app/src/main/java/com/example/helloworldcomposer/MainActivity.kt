@@ -30,14 +30,14 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            app()
+            App()
         }
     }
 }
 
 @Preview(showBackground = true)
 @Composable
-fun app() {
+fun App() {
 
     var counter by rememberSaveable { mutableStateOf(0) }
 
